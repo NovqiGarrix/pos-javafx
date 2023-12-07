@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.novqigarrix.pos.controllers.CardController">
+   <children>
+      <VBox fx:id="cardContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="226.0" styleClass="card" stylesheets="@../style.css">
+      <children>
+          <ImageView fx:id="productImg" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="card-img">
+              <image>
+                  <Image url="@../assets/img.jpg" />
+              </image>
+          </ImageView>
+          <Label fx:id="productTitle" graphicTextGap="0.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="200.0" styleClass="card-title" stylesheets="@../style.css" text="Almond Brown Sugar Croissant" textFill="#2e2e2e" textOverrun="CLIP" wrapText="true" VBox.vgrow="ALWAYS">
+              <font>
+                  <Font name="Poppins Bold" size="16.0" />
+              </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+          </Label>
+          <Label fx:id="productDesc" graphicTextGap="0.0" prefWidth="200.0" styleClass="card-description" stylesheets="@../style.css" text="Sweet croissant with topping almonds and brown sugar" textFill="DIMGRAY" wrapText="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Poppins Regular" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="productQty" layoutX="23.0" layoutY="226.0" prefHeight="20.0" prefWidth="200.0" styleClass="card-description" stylesheets="@../style.css" text="Sisa: 3" textFill="DIMGRAY" wrapText="true" VBox.vgrow="SOMETIMES">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Poppins Medium" size="13.0" />
+               </font>
+            </Label>
+          <Label fx:id="productPrice" text="Rp 1.000.000" textFill="#f5751d">
+              <font>
+                  <Font name="Poppins Bold" size="16.0" />
+              </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+      </children>
+      </VBox>
+   </children>
+</HBox>

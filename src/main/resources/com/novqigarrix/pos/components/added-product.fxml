@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" fx:id="addedProductWrapper" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="300.0" prefHeight="80.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.novqigarrix.pos.controllers.AddedProductController">
+   <children>
+      <ImageView fx:id="productImg" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img.jpg" />
+         </image>
+         <HBox.margin>
+            <Insets right="20.0" />
+         </HBox.margin>
+      </ImageView>
+      <VBox prefHeight="0.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="productTitle" prefHeight="424.0" prefWidth="210.0" text="Smoke Tenderloin Chocochips Croissant" wrapText="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="30.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="productPriceXQty" minWidth="90.0" text="Rp 1.000.000" textFill="#f46700" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Poppins Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="30.0" prefWidth="24.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="BOTTOM_RIGHT" prefWidth="85.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="addQty" mnemonicParsing="false" styleClass="added-product-btn" stylesheets="@../style.css" text="+" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="qty" prefHeight="23.0" prefWidth="15.0" text="2" textFill="#8c8c8c">
+                           <font>
+                              <Font name="Poppins Medium" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="reduceQty" layoutX="10.0" layoutY="68.0" mnemonicParsing="false" styleClass="added-product-btn" stylesheets="@../style.css" text="-" textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

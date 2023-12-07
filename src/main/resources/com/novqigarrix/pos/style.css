@@ -1,0 +1,47 @@
+
+
+.search-input {
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-background-color: #fff;
+    -fx-border-width: none;
+    -fx-padding: 1em;
+}
+
+.card {
+    -fx-background-color: #fff;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 1em;
+}
+
+.card-img {
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.payment-btn {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #f46700;
+    -fx-cursor: pointer;
+}
+
+.payment-btn:hover {
+    -fx-background-color: #f36405;
+}
+
+.added-product-btn {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #f46700;
+    -fx-cursor: pointer;
+}
+
+.added-product-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.added-product-scroll-pane {
+    -fx-background-color: transparent;
+}
